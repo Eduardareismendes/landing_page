@@ -250,7 +250,7 @@ h4{
 }
 
 .marcadores-grade{
-    margin-top: 15px;
+    margin-top: 30px;
 }
 
 
@@ -258,6 +258,7 @@ h4{
     margin-top: -3px;
     margin-left: -13.98px;
 }
+
 
 .imagem-areas{
     flex-direction:row;  
@@ -268,6 +269,18 @@ h4{
     flex-direction:row;  
     display: flex;
 }
+
+@media(max-width: 768px){
+    .imagem-marcadores{
+        flex-direction: column;
+        display: flex;
+        margin-top: -24px;
+    }
+    .grade{
+        line-height: 18px;
+    }
+}
+
 
 .ul-marcadores{
     margin-top: -5px;
