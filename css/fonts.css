@@ -4,3 +4,17 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'delicate';
+    src: url('../fonts/Mithella-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rounded';
+    src: url('../fonts/DiscotecaRounded_Free_For_Personal_Use.ttf');
+    font-weight: normal;
+    font-style: normal;
+}

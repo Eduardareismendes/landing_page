@@ -14,6 +14,7 @@ body {
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 header {
@@ -97,7 +98,8 @@ header a:hover {
     font-size: 65px;
     line-height: 10px;
     font-family: 'Berkshire Swash', cursive;
-    color: #003D76;
+    color: #b61184;
+    padding-top: 20px;
 }
 
 .titulo1 {
@@ -112,6 +114,8 @@ header a:hover {
     justify-content: space-between;
     margin-left: 330px;
     margin-right: 330px;
+    font-size: 2em;
+    color: #b633af;
 }
 
 .icons {
@@ -131,14 +135,14 @@ header a:hover {
 }
 
 mark {
-    background-color: #00ffff;
+    background-color: #ff9dea;
     border-radius: 8px;
 
 }
 
 .corpo-titulo2 {
     font-size: 35px;
-    color: #000000;
+    color: #921192;
 
 }
 
@@ -146,7 +150,7 @@ mark {
     text-align: center;
     position: relative;
     top: -30px;
-    text-shadow: 2px 2px 8px #03ffff;
+    text-shadow: 2px 2px 8px #ee39a2;
     
 }
 @media(max-width: 768px){
@@ -161,11 +165,11 @@ mark {
 }
 
 .section1 {
-    background-image: url("../imagens/fundo1.jpg");
-    width: 100%; 
+    background-color: #fdced8;
     height: auto;
     top:0;
     left: 0;
+    padding-bottom: 10px;
 }
 
 .corpo1 p {
@@ -181,8 +185,8 @@ mark {
     text-align: center justify;
 }
 
-.box-azul .corpo1 p{
-    background-color: #43b3cf;
+.box-rosa .corpo1 p{
+    background-color: #fabac8;
     border-radius: 8px;
     width: 85%;
     height: 155px;
@@ -190,6 +194,140 @@ mark {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom:  20px;
+}
+
+
+.section9{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #e7b8d8;
+}
+
+.section9-conteudo{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.section10 {
+    height: auto;
+    top:0;
+    left: 0;
+    padding-bottom: 45px;
+    padding-top: 15px;
+}
+
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slide{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slide input{
+    display: none;
+}
+
+.st{
+    width: 20%;
+    transition: 2s;
+}
+
+.st img{
+    width: 800px;
+    height: 500px;
+}
+
+.nav-m{
+    position: absolute;
+    width: 800px;
+    margin-top: -20px;
+    justify-content: center;
+    display: flex;
+}
+
+.m-btn{
+    border: 2px solid #23e3c2;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.m-btn:not(:last-child){
+    margin-right: 30px;
+}
+
+.m-btn:hover{
+    background-color: #23e3c2;
+}
+
+#radio1:checked ~.first{
+    margin-left: 0;
+}
+
+#radio2:checked ~.first{
+    margin-left: -20%;
+}
+
+
+#radio3:checked ~.first{
+    margin-left: -40%;
+}
+
+
+#radio4:checked ~.first{
+    margin-left: -60%;
+}
+
+.nav-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 480px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-auto div{
+    border: 2px solid #23e3c2;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.nav-auto div:not(:last-child){
+    margin-right: 30px;
+    justify-content: center;
+}
+
+
+#radio1:checked ~ .nav-auto .a-b1{
+    background-color: #23e3c2;
+}
+
+#radio2:checked ~ .nav-auto .a-b2{
+    background-color: #23e3c2;
+}
+
+#radio3:checked ~ .nav-auto .a-b3{
+    background-color: #23e3c2;
+}
+
+#radio4:checked ~ .nav-auto .a-b4{
+    background-color: #23e3c2;
 }
 
 h4{
@@ -200,12 +338,22 @@ h4{
 }
 
 .corpo-titulo3 {
-    color: #003D76;
+    color: #8e00aa;
     font-size: 65px;
     margin: 10px;
     margin-top: 40px;
-    font-family: 'sangira', cursive;
-    font-weight:800;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-family: 'delicate', cursive;
+    padding-top: 50px;
+}
+
+.section2 {
+    background-color: #d6acee;
+    height: auto;
+    top: 0;
+    left: 0;
+    padding-bottom: 40px;
 }
 
 
@@ -219,7 +367,7 @@ h4{
     line-height: 18px;
     left: 10px;
     margin-right: 10px;
-    margin-top: 54px;
+    margin-top: 80px;
 }
 
 
@@ -229,13 +377,25 @@ h4{
     font-size: 16px;
     max-width: none;
     position: relative;
-    top: 15px;
+    top: 25px;
+    line-height: 18px;
+    left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+.corpo10 p {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    max-width: none;
+    position: relative;
+    top: 25px;
     line-height: 18px;
     left: 10px;
     margin-right: 10px;
     margin-top: 10px;
 }
-
 .grade {
     display:list-item;
     list-style-type: disc;
@@ -247,10 +407,6 @@ h4{
 
 .grade span {
     color: #000000;
-}
-
-.marcadores-grade{
-    margin-top: 30px;
 }
 
 
@@ -283,37 +439,92 @@ h4{
 
 
 .ul-marcadores{
-    margin-top: -5px;
+    margin-top: 5px;
     margin-left: -13.98px;
 }
 
 .img2 img{
-    width: 320px;
+    display: flex;
+    position: absolute;
+}
+
+.img_grade{
+    width: 420px;
     height: auto;
     margin-left: 150px;
+    margin-top: 50px;
+}
+
+.pontilhado{
+    width: 300px;
+    height: 308px;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+
+.botao{
+    margin-top: 390px;
+    margin-left: -500px;
+}
+
+button{
+    background-image: linear-gradient(45deg, #741b8a, #e92efb);
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@keyframes anima-botao {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.05);
+    }
+}
+
+button:hover{
+    animation-name: anima-botao;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .corpo-titulo4 {
     color: #003D76;
     font-size: 65px;
     margin: 10px;
-    margin-top: 50px;
-    font-family: 'sangira', cursive;
+    margin-top: 100px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-family: 'delicate', cursive;
+}
+
+.corpo-titulo4 .marcatexto-atuacao{
+    background-color: #fc2e7d;
+    color: #f1a9ff;
+    border-radius: 15px 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
 }
 
 
-.img3 img{
+.img3 .img-estagio{
     width: 420px;
     height: auto;
     margin-left: 310px;
     border-radius: 8px;
-    border: 10px solid #30f1ff;
+    border: 10px solid #66dbff;
     margin-top: -22px;
 }
 
 .section3{
-    background-image: url("../imagens/fundo2.jpg");
-    width: 100%; 
+    background-color: #ffffff;
     height: auto;
     top:0;
     left: 0;
@@ -324,6 +535,27 @@ h4{
     top: 40px;
     
 }
+
+.corpo-titulo11 {
+    color: #8e00aa;
+    font-size: 65px;
+    margin: 10px;
+    margin-top: -70px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-family: 'delicate', cursive;
+    padding-top: 40px;
+}
+
+.corpo-titulo11 .marcatexto-estagio{
+    background-color: #fc2e7d;
+    color: #f1a9ff;
+    border-radius: 15px 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
 
 .areas {
     display:list-item;
@@ -338,6 +570,14 @@ h4{
     color: #000000;
 }
 
+.section4 {
+    background-color: #aca4d3;
+    height: auto;
+    top:0;
+    left: 0;
+    padding-bottom: 90px;
+}
+
 .titulo4 {
     position: relative;
     top: 32px;
@@ -345,11 +585,14 @@ h4{
 }
 
 .corpo-titulo5 {
-    color: #003D76;
+    color: #832a83;
     font-size: 65px;
     margin: 10px;
     margin-top: 20px;
-    font-family: 'sangira', cursive;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-family: 'delicate', cursive;
+    padding-top: 16px;
 }
 
 .mercado-marcadores{
@@ -366,7 +609,7 @@ h4{
     display:list-item;
     list-style-type: disc;
     line-height: 5px;
-    color: #00ffff;
+    color: #b41653;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
@@ -385,7 +628,7 @@ h4{
     line-height: 18px;
     left: 10px;
     margin-right: 10px;
-    margin-top: 45px;
+    margin-top: 50px;
 }
 
 .mercado-corpo p{
@@ -398,15 +641,16 @@ h4{
 }
 
 .mercado-corpo2 span{
-    color: #f50057;
+    color: #8f0837;
     font-family: 'Lobster Two', cursive;
-    font-size: 22px;
+    font-size: 23px;
 }
 
 
 .imagem-mercado-cau img{
-    margin-top: -76px;
+    margin-top: -60px;
     margin-left: 10px;
+    border-radius: 20px;
 }
 
 
@@ -443,12 +687,13 @@ div.polaroid-container3 p {
   }
   
 .exemplos .corpo-titulo6 {
-    color: #000000;
+    color: #881f6e;
     font-size: 35px;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'rounded', Arial, Helvetica, sans-serif;
+    letter-spacing: 4px;
     margin: 10px;
     margin-top: -30px;
-    text-shadow: 2px 2px 8px #03ffff;
+    text-shadow: 2px 2px 8px #9600c4;
 }
 
 .corpo-mercado p{
@@ -477,8 +722,7 @@ div.polaroid-container3 p {
 }
 
 .section5{
-    background-image: url("../imagens/fundo3.jpg");
-    width: 100%; 
+    background-color: #fabac8;
     height: auto;
     top:0;
     left: 0;
@@ -486,12 +730,31 @@ div.polaroid-container3 p {
 }
 
 
-.corpo-titulo6 {
+.corpo-titulo12 {
     color: #003D76;
-    font-size: 55px;
-    margin-top: -30px;
-    font-family: 'sangira', cursive;
+    font-size: 65px;
+    font-weight:400;
+    letter-spacing: 2px;
+    font-family: 'delicate', cursive;
+    margin-top: 10px;
     margin-left: 10px;
+    line-height: 50px;
+}
+
+.corpo-titulo12 .marcatexto-competencias{
+    background-color: #ff8b8b;
+    color: #f9b0fc;
+    border-radius: 15px 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.img_competencia{
+    width: 800px;
+    height: auto;
+    margin-left: 420px;
+    margin-top: -320px;
 }
 
 
@@ -509,7 +772,7 @@ div.polaroid-container3 p {
     display:list-item;
     list-style-type: disc;
     line-height: 5px;
-    color: #45dddd;
+    color:  #1bacac;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     left: 10px;
@@ -519,33 +782,12 @@ div.polaroid-container3 p {
     color: #000000;
 }
 
-.carrossel{
-    width: 400px;
-    height: 268px;
-    overflow: hidden;
-    margin-left: 15%;
-    margin-top: 35px;
-}
-
-.carrossel .fotos{
-    width: 500%;
-    animation: animacao 5s infinite;
-}
-
-.carrossel .fotos img{
-    width: 19.8%;
-}
-
-@keyframes animacao {
-     0% {margin-left: 0;}
-     20% {margin-left: 0;}
-     25% {margin-left: -100%;}
-     45% {margin-left: -100%;}
-     50% {margin-left: -200%;}
-     70% {margin-left: -200%;}
-     75% {margin-left: -300%;}
-     95% {margin-left: -300%;}
-     100% {margin-left: -400%;}
+.marcadortexto-pos{
+    background-color: #1bacac;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 .titulo5 {
@@ -555,11 +797,14 @@ div.polaroid-container3 p {
 }
 
 .corpo-titulo7 {
-    color: #003D76;
+    color: #c23c59;
     font-size: 65px;
     margin: 10px;
     margin-top: -30px;
-    font-family: 'sangira', cursive;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-family: 'delicate', cursive;
+    padding-top: 16px;
 }
 
 .titulo6 {
@@ -569,26 +814,52 @@ div.polaroid-container3 p {
 }
 
 .corpo-titulo8 {
-    color: #003D76;
     font-size: 65px;
     margin: 10px;
     margin-top: 45px;
-    font-family: 'sangira', cursive;
+    font-weight:400;
+    letter-spacing: 2px;
+    font-family: 'delicate', cursive;
+}
+
+.corpo-titulo8 .marcatexto{
+    background-color: #39e0f7;
+    color: #005eaa;
+    border-radius: 15px 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
 }
 
 .corpo-titulo9 {
     color: #003D76;
-    font-size: 35px;
+    font-size: 65px;
     margin: 10px;
     margin-top: 45px;
+    font-weight:400;
+    letter-spacing: 2px;
+    font-family: 'delicate', cursive;
+}
+
+.corpo-titulo9 .marcatexto2-pos{
+    background-color: #ff89c4;
+    color: #9ddefc;
+    border-radius: 15px 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
 }
 
 .corpo-titulo10 {
-    color: #003D76;
+    color: #c26db4;
     font-size: 65px;
     margin: 10px;
     margin-top: 85px;
-    font-family: 'sangira', cursive;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-family: 'delicate', cursive;
+    padding-top: 16px;
+    line-height: 60px;
 }
 
 
@@ -613,13 +884,13 @@ div.polaroid-container3 p {
     line-height: 18px;
     left: 10px;
     margin-right: 10px;
-    margin-top: 50px;
+    margin-top: 70px;
     font-weight: bolder;
 }
 
 .container{
     width: 1150px;
-    padding: 45px;
+    padding: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -657,25 +928,25 @@ div.polaroid-container3 p {
 }
 
 .container .card:hover{
-    background-color: #dc2e69;
+    background-color: #f56494;
     color: #ffffff;
     margin-top: -30px;
-    box-shadow: 2px 20px 25px #dc2e68;
-    border-color: #dc2e68;
+    box-shadow: 2px 20px 25px #f56494;
+    border-color: #f56494;
+    transition: 0.3s;
 }
 
 .container .card:hover .content p{
     color: #ffffff;
 }
 
-
 .corpo8 p {
-    color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    color: #b61a70;
+    font-family: 'rounded', Arial, Helvetica, sans-serif;
+    font-size: 26px;
     max-width: none;
     position: absolute;
-    top: 70px;
+    top: 90px;
     line-height: 18px;
     left: 10px;
     margin-right: 10px;
@@ -688,7 +959,7 @@ div.polaroid-container3 p {
     font-family: Arial, Helvetica, sans-serif;
     max-width: none;
     position: relative;
-    top: 80px;
+    top: 100px;
     line-height: 30px;
     left: 10px;
     margin-right: 10px;
@@ -719,9 +990,9 @@ div.polaroid-container3 p {
 }
 
 .corpo9 p {
-    color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    color: #b61a70;
+    font-family: 'rounded', Arial, Helvetica, sans-serif;
+    font-size: 26px;
     max-width: none;
     position: absolute;
     top: 270px;
@@ -753,6 +1024,14 @@ div.gallery img {
     padding: 15px;
     text-align: center;
 }
+
+div.desc a{
+    text-decoration: none;
+    color: #af2369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}
   
 .container-galeria{
     display: grid;
@@ -773,8 +1052,7 @@ div.gallery img {
 
 .section7{
     position: relative;
-    background-image: url("../imagens/fundo4.jpg");
-    width: 100%; 
+    background-color: #ffffff;
     height: 800px;
     top:0;
     left: 0;
@@ -815,7 +1093,7 @@ div.gallery img {
     display:list-item;
     list-style-type: disc;
     line-height: 15px;
-    color: #45dddd;
+    color: #1bacac;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     left: 10px;
@@ -825,39 +1103,29 @@ div.gallery img {
     color: #000000;
 }
 
+.imagens-pos img{
+    display: flex;
+    position: absolute;
+}
+
 .personagem {
-    width: 220px;
+    width: 285px;
     height: auto;
-    margin-top: -85px;
-    margin-left: 500px;
+    margin-top: -37px;
+    margin-left: 210px;
     animation: animacao2 4s infinite;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes animacao2 {
-    from {
-        margin-left: 450px;
+    0% {
+        margin-left: 210px;
     }
-    to {
-        margin-left: 500px;
+    50% {
+        margin-left: 200px;
     }
-}
-.box {
-    position: relative;
-    top: 100px;
-    left: 50px;
-    transform: translate(-50%, -50%);
-    width: calc(801px/10);
-    height: 77px;
-    background: url("../imagens/cachorro.PNG");
-    animation: animate 1s steps(10) infinite;
-}
-
-@keyframes animate {
-    from {
-        background-position: 0;
-    }
-    to {
-        background-position: -801px;
+    100% {
+        margin-left: 220px;
     }
 }
 
